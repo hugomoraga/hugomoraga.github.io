@@ -6,8 +6,9 @@ permalink: /java0026/
 
 
 # Bootcamp Fullstack Java Aiep Java 0026 
+#### Trabajos Frontend:
 
-### Trabajos Frontend: // ### Formulario.html - [Formulario](/formulario).
+Ejercicios Para el Modulo Frontend del curso Java
 
-
-
+- [Formulario](/formulario)
+- [Desafio Corredor Propiedades](/corredor)
