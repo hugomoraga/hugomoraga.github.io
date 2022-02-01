@@ -1,7 +1,7 @@
 ---
-layout: java0026
+layout: content
 title: Java 0026
 permalink: /java0026/
 ---
 
-prueba
+Trabajos para Talento Digital - Bootcamp Fullstack Java Aiep Java 0026 

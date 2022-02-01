@@ -1,6 +1,6 @@
 ---
-layout: java0026
-title: Java 0026
+layout: content
+title: Trabajos
 permalink: /works/
 ---
 
