@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: content
 title: Acerca de mi
 permalink: /about/
 ---
