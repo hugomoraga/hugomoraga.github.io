@@ -23,8 +23,8 @@ email: hg.moraga@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Portafolio Dev
 domain: hugomoraga.github.io 
-baseurl: "/hugomoraga.github.io/" # the subpath of your site, e.g. /blog
-url: "https://hugomoraga.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: /hugomoraga.github.io/ # the subpath of your site, e.g. /blog
+url: https://hugomoraga.github.io # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: hugomoraga
 github_username:  hugomoraga
 
