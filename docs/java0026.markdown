@@ -10,5 +10,5 @@ permalink: /java0026/
 
 Ejercicios Para el Modulo Frontend del curso Java
 
-- [Formulario](/formulario)
+
 - [Desafio Corredor Propiedades](/corredor)

@@ -1,0 +1,26 @@
+---
+---
+
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+
+
+.title {
+    font-family: 'Lobster', cursive;
+}
+
+.logo {
+    width: 320px;
+    background: rgb(221,220,218);
+    background: linear-gradient(0deg, rgba(221,220,218,1) 0%, rgba(255,255,255,0.5) 100%);
+    border-radius: 330px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.hola {
+    width: 20px;
+}
+
+
+@import 'main-corredora';

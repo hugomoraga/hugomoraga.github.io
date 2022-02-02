@@ -1,0 +1,99 @@
+---
+layout: "desafio-corredor-wrapper" 
+---
+
+<div class="container">
+    <h1 class="pt-5">Ingresar Nueva Propiedad</h1>
+    <div id="mensajes">
+
+    </div>
+    
+    <div class="card bg-light opacity-75" style="z-index: 1;">
+        <div class="bg-transparent" style="z-index: 20;">
+        <form class="p-5" id="form-registro">
+            <div class="mb-3">
+              <label for="nombre" class="form-label  fw-bold fs-5">Nombre de la propiedad</label>
+              <input type="text" class="form-control" id="nombre"  name="nombre" >
+            </div>
+            
+            <div class="mb-3">
+                <label for="tipo" class="form-label  fw-bold fs-5">Tipo de propiedad</label>
+    
+                <select class="form-select" id="tipo" name="tipo">
+                    <option selected>Seleccionar Tipo</option>
+                    <option value="arriendo">Arriendo</option>
+                    <option value="venta">Venta</option>
+                  </select>
+            </div>
+    
+            <div class="mb-3">
+                <label for="direccion" class="form-label  fw-bold fs-5">Direccion</label>
+                <input type="text_area" class="form-control" id="direccion" name="direccion">
+            </div>
+    
+            <div class="mb-3">
+                <label for="comuna" class="form-label  fw-bold fs-5">Comuna</label>
+                <input type="text_area" class="form-control" id="comuna" name="comuna">
+            </div>
+    
+            <div class="mb-3">
+                <label for="region" class="form-label  fw-bold fs-5">Region</label>
+                <input type="text" class="form-control" id="region" name="region">
+            </div>
+    
+            <div class="mb-3">
+                <label for="valor_uf" class="form-label  fw-bold fs-5">Valor en UF</label>
+                <input type="text" class="form-control" id="valor_uf" name="valor_uf" ">
+            </div>
+
+            <input type="text" name="inputwindow" id="inputwindow" onclick="takeValue(document.getElementById('valor_uf').value)">
+
+    
+            <div class="mb-3">
+                <label for="valor_pesos" class="form-label  fw-bold fs-5">Valor en Pesos</label>
+                <input type="text" class="form-control" id="valor_pesos" name="valor_pesos">
+            </div>
+       
+          
+            <button id="boton" type="submit" class="btn btn-primary text-white">enviar</button>
+          </form>
+        </div>
+    </div>
+    
+
+</div>
+
+<script>
+
+!async function(){
+
+let uf = fetch('https://mindicador.cl/api/uf')
+    .then(result => result.json())
+    .then((output) => {
+        return uf = output.serie[0].valor;
+    
+        
+}).catch(err => console.error(err));
+
+}();
+
+
+function takeValue(x) {
+    let multi =    uf * x
+	console.log(multi)
+   
+}
+
+
+
+
+
+
+
+
+
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+<script src="/assets/javascript/corredor-registro.js"></script>

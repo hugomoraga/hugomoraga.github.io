@@ -1,7 +1,6 @@
 ---
-layout: desafio-corredor-propiedades
+layout: desafio-corredor-home
 title: Trabajos
 permalink: /corredor/
 ---
 
-Trabajos
