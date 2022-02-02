@@ -27,11 +27,10 @@ function mostrarMensaje(tipo, mensaje) {
 
 
     const baseURL = 'https://mwouximqkpguzanqswfi.supabase.co';
-    const apiCall   = '/rest/v1/propiedades'
+    const apiCall = '/rest/v1/propiedades'
 
-    const apiKey =
-  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlhdCI6MTY0Mzc1ODk0MywiZXhwIjoxOTU5MzM0OTQzfQ.LdF6-P91FlknXc06maRQ7tkI3SsjgXJ5wplOaA6U2bI'
-    const url       = baseURL + apiCall
+    const apiKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlhdCI6MTY0Mzc1ODk0MywiZXhwIjoxOTU5MzM0OTQzfQ.LdF6-P91FlknXc06maRQ7tkI3SsjgXJ5wplOaA6U2bI'
+    const url    = baseURL + apiCall
 
     const propiedad    = {
         nombre,
