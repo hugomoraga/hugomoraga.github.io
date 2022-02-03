@@ -28,4 +28,5 @@ form.addEventListener('submit', async (event) => {
         div.innerHTML = 'registro realizado'
     }
 
+
 })

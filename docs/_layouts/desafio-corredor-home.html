@@ -11,11 +11,20 @@ layout: "desafio-corredor-wrapper"
                     {{content}}
                 </p>
                 
-                <div>
-                <a href="/corredor/formulario" class="btn btn-primary text-white rounded-pill">Ingresar Propiedad</a>
+                <div class="pt-5 d-inline-flex ">
+                    <h4>Propiedades Disponibles</h4> <span class="mx-4"><a href="/corredor/formulario" class="btn btn-primary text-white rounded-pill">Ingresar Propiedad</a></span>
                 </div>
-            </div>
+           
+            
+           <ul id="propiedades" class="row py-5"></ul>
 
         </div>
 
 
+        </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+     <script src="/assets/javascript/cargar-registros.js"></script>
+        
