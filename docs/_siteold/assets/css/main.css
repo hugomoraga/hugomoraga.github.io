@@ -1,0 +1,7 @@
+.contenido { margin-top: -100px; }
+.contenido h1 { font-size: 3rem; }
+.contenido h2 { font-size: 2.5rem; }
+.contenido h3 { font-size: 2rem; }
+.contenido li { padding-top: 8px; }
+.contenido li a { background-color: #2dffbf; padding: 3px 13px; border-radius: 2.5rem; font-size: 1rem; font-weight: bold; }
+.contenido li a:hover { background-color: #1ba179; color: smoke; }

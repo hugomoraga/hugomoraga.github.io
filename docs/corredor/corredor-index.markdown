@@ -1,6 +1,6 @@
 ---
-layout: desafio-corredor-home
+layout: desafio-corredor/home
 title: Trabajos
-permalink: /corredor/
+permalink: /corredor/index
 ---
 
