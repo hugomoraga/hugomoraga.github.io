@@ -49,43 +49,46 @@ layout: "desafio-corredor/wrapper"
                     </div>
                 </div>
 
-            <div class="mb-3">
-                <label for="valor_uf" class="form-label  fw-bold fs-5">Valor en UF</label>
-                <input type="text" class="form-control" id="valor_uf" name="valor_uf" ">
+            <div class="row">
+                <div class="col">
+                    <div class="mb-3">
+                        <label for="valor_uf" class="form-label  fw-bold fs-5">Valor en UF</label>
+                        <input type="text" class="form-control" id="inputUf" name="valor_uf" oninput="currencyConverter(this.id,this.value)" onchange="currencyConverter(this.id,this.value)"" >
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="mb-3">
+                        <label for="valor_pesos" class="form-label  fw-bold fs-5">Valor en Pesos</label>
+                        <input type="text" class="form-control" id="inputPesos" name="valor_pesos" oninput="currencyConverter(this.id,this.value)" onchange="currencyConverter(this.id,this.value)"">
+                    </div>
+                </div>
             </div>
 
-            <input class="d-none" type="text" name="inputwindow" id="inputwindow" onclick="takeValue(document.getElementById('valor_uf').value)">
+        
 
     
-            <div class="mb-3">
-                <label for="valor_pesos" class="form-label  fw-bold fs-5">Valor en Pesos</label>
-                <input type="text" class="form-control" id="valor_pesos" name="valor_pesos">
-            </div>
-            <button id="boton" type="submit" class="btn btn-primary text-whit rounded-0 text-light py-4">Enviar</button>
+    
+            <button id="boton" type="submit" class="btn btn-primary text-whit rounded-0 text-light px-4">Enviar</button>
           </form>
         </div>
     </div>
 </div>
 
+
 <script>
 
-!async function(){
 
-let uf = fetch('https://mindicador.cl/api/uf')
-    .then(result => result.json())
-    .then((output) => {
-        return uf = output.serie[0].valor;
-    
-        
-}).catch(err => console.error(err));
-
-}();
-
-
-function takeValue(x) {
-    let multi =    uf * x
-	console.log(multi)
-   
+function currencyConverter(source, valNum) {
+  valNum = parseFloat(valNum);
+  uf = 31244;
+  var inputUf = document.getElementById("inputUf");
+  var inputPesos = document.getElementById("inputPesos");
+  if (source == "inputUf") {
+    inputPesos.value = (valNum * uf).toFixed(0);
+  }
+  if (source == "inputPesos") {
+    inputUf.value = (valNum / uf).toFixed(0);
+  }
 }
 
 
