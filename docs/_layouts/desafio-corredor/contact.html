@@ -1,0 +1,28 @@
+---
+layout: "desafio-corredor/wrapper" 
+---
+
+<div class="container">
+    <h1 class="pt-5 text-primary py-3">Mandanos tu Mensaje </h1>
+  
+    
+    <div class="card bg-light opacity-75" style="z-index: 1;">
+        <form class="p-5"
+        action="https://formspree.io/f/mzboejyw"
+        method="POST"
+      >
+          <div class="mb-3">
+            <label for="nombre" class="form-label  fw-bold fs-5">Mail</label>
+            <input type="email" name="_replyto" class="form-control">
+          </div>
+       
+          <div class="mb-3">
+            <label for="nombre" class="form-label  fw-bold fs-5">Mensaje</label>
+            <textarea class="form-control" rows="5" name="message"></textarea>
+          </div>
+
+          <button class="btn btn-primary text-whit rounded-0 text-light px-4" type="submit">Enviar</button>
+        
+
+    </div>
+</div>
