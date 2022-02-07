@@ -24,17 +24,25 @@ async function loadpropiedades() {
     let region;
     let valor_pesos = document.createElement("p");
     let valor_uf = document.createElement("p");
+    let a = document.createElement("a");
+    let link = document.createTextNode("Ver Propiedad");
+    a.appendChild(link); 
+    a.href=`/corredor/propiedad`;
+
 
     nombre.innerHTML = `${propiedad.nombre} <span class="badge rounded-pill fs-6 bg-primary">${propiedad.tipo}</span>`;
     direccion.innerHTML = `<strong>Direccion:</strong> ${propiedad.direccion}`;
     comuna.innerHTML = `${propiedad.comuna} , ${propiedad.region}`;
     valor_pesos.innerHTML = `<strong>Precio:</strong> $ ${propiedad.valor_pesos}`;
     valor_uf.innerHTML = ` ${propiedad.valor_uf}`;
+    
+
 
     li.appendChild(nombre);
     li.appendChild(direccion);
     li.appendChild(comuna);
     li.appendChild(valor_pesos);
+    li.appendChild(a);
     list.appendChild(li);
   });
 
